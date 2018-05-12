@@ -7,7 +7,7 @@ RUN mkdir -p /app
 WORKDIR /app
 #把文件的req添加到容器中
 ADD requirements.txt requirements.txt
-在容器中运行，添加依赖
+#在容器中运行，添加依赖
 RUN pip install -r requirements.txt
 #add和copy差不多，不过add添加的压缩包可以自动解压，更牛逼
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
