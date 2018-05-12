@@ -18,4 +18,4 @@ echo "========================================================================"
 
 unset PASSWORD
 
-ipython notebook --no-browser --port 8888 --ip=* --NotebookApp.password="$HASH"
+ipython notebook --no-browser --port 8888 --ip=* --NotebookApp.password="$HASH" --allow-root
